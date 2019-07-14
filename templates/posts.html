@@ -1,8 +1,19 @@
 <div>
 
+    <a href="{% url 'make_post'%}">Make Post </a>
+
+
+</div>
+
+
+
+<div>
+
     {% for post in object_list %}
         <p>{{post.title}}</p>
-        <img src="{{ post.image }}"> 
+        
+            <img src="{{ post.image }}"> 
+        
 
     {% endfor %}
 

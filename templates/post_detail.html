@@ -2,4 +2,12 @@
 
 
 
-<img src="http://{{object.image}}">
+<img src="http://{{request.META.HTTP_HOST}}/{{object.image}}">
+
+<div>
+     <a href="{% url 'update_post' object.pk %}">Update Post Title </a>
+</div>
+
+<div>
+     <a href="{% url 'delete_post' object.pk %}">Delete Post </a>
+</div>
